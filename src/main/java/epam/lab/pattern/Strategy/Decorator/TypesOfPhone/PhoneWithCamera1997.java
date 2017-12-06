@@ -4,7 +4,7 @@ import epam.lab.pattern.Strategy.Decorator.MyDecorator;
 import epam.lab.pattern.Strategy.Decorator.Strategy.UsingSmartphone;
 import epam.lab.pattern.Strategy.Decorator.Tool;
 
-public class PhoneWithCamera1997 extends MyDecorator implements UsingSmartphone {
+public class PhoneWithCamera1997 extends MyDecorator  {
     public PhoneWithCamera1997(Tool tool) {
         super(tool);
     }
@@ -18,8 +18,5 @@ public class PhoneWithCamera1997 extends MyDecorator implements UsingSmartphone 
         return super.doCall()+madePhoto();
     }
 
-    @Override
-    public void usePhone() {
-        System.out.println("Shoot.");
-    }
+
 }

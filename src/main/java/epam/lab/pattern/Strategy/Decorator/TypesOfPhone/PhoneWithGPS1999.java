@@ -4,7 +4,7 @@ import epam.lab.pattern.Strategy.Decorator.MyDecorator;
 import epam.lab.pattern.Strategy.Decorator.Strategy.UsingSmartphone;
 import epam.lab.pattern.Strategy.Decorator.Tool;
 
-public class PhoneWithGPS1999 extends MyDecorator implements UsingSmartphone {
+public class PhoneWithGPS1999 extends MyDecorator {
     public PhoneWithGPS1999(Tool tool) {
         super(tool);
     }
@@ -17,8 +17,4 @@ public class PhoneWithGPS1999 extends MyDecorator implements UsingSmartphone {
         return super.doCall()+showWay();
     }
 
-    @Override
-    public void usePhone() {
-        System.out.println("Opening GOOGLE maps");
-    }
 }

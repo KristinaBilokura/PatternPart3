@@ -4,7 +4,7 @@ import epam.lab.pattern.Strategy.Decorator.MyDecorator;
 import epam.lab.pattern.Strategy.Decorator.Strategy.UsingSmartphone;
 import epam.lab.pattern.Strategy.Decorator.Tool;
 
-public class PhoneWithWifi1998 extends MyDecorator  implements UsingSmartphone{
+public class PhoneWithWifi1998 extends MyDecorator  {
     public PhoneWithWifi1998(Tool tool) {
         super(tool);
     }
@@ -17,8 +17,5 @@ public class PhoneWithWifi1998 extends MyDecorator  implements UsingSmartphone{
         return super.doCall()+setConnection();
     }
 
-    @Override
-    public void usePhone() {
-        System.out.println("Checking email");
-    }
+
 }
